@@ -1,0 +1,74 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "tab_size": 6,
+  "buffer_line_height": "standard",
+  "buffer_font_weight": 450.0,
+  "ui_font_family": "0xProto Nerd Font Mono",
+  "buffer_font_family": "0xProto Nerd Font",
+  "disable_ai": true,
+  "show_edit_predictions": true,
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    }
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "copilot": {
+    "disabled_globs": [".env"]
+  },
+  "languages": {
+    "Wgsl": {
+      "show_edit_predictions": false
+    },
+    "Markdown": {
+      "show_copilot_suggestions": false
+    },
+    "Zig": {
+      "show_copilot_suggestions": false
+    },
+    "C++": {
+      "show_copilot_suggestions": false
+    },
+    "Rust": {
+      "show_edit_predictions": false,
+      "show_copilot_suggestions": false
+    }
+  },
+  "theme": "Gruvbox Dark",
+  "vim_mode": true,
+  "ui_font_size": 24,
+  "buffer_font_size": 18,
+  "lsp": {
+    "clangd": {
+      "binary": {}
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          // "build": {
+          //   "package": "bevy_ecs"
+          // },
+          "allTargets": true
+          // "sysroot": "discover"
+        },
+        // Use -p instead of --workspace for cargo check
+        "check": {
+          "workspace": true
+        }
+      }
+    }
+  }
+}
